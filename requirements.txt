@@ -1,0 +1,30 @@
+# ============================================================
+# F1 Strategy Prediction Model — Python Dependencies
+# Tested on macOS M2 (Apple Silicon), Python 3.10+
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# ── Core data science
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# ── Machine learning
+scikit-learn>=1.4.0
+joblib>=1.3.0
+
+# ── F1 data APIs
+fastf1>=3.3.0          # FastF1: official F1 telemetry & timing data
+requests>=2.31.0       # HTTP for Jolpica/Ergast API + data_connectors.py
+tqdm>=4.65.0           # Progress bars for season batch loading
+
+# ── Visualisation
+matplotlib>=3.7.0
+seaborn>=0.13.0        # ROC / confusion matrix styling
+
+# ── File I/O
+openpyxl>=3.1.0        # Excel read/write (.xlsx)
+
+# ── Optional but recommended
+# imbalanced-learn>=0.12.0   # SMOTE / geometric_mean_score (not required — we compute G-mean manually)
+# xgboost>=2.0.0             # Drop-in replacement for GBC with faster training (Phase 2 upgrade)
